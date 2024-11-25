@@ -14,6 +14,7 @@ export const useAccountProvider = () => {
   const customerId = String(
     localStorage.getItem(localStorageProperties.customerId)
   );
+  const [isLoading, setIsLoading] = useState(false);
   const { state, dispatch } = useAppContext();
   const [accounts, setAccounts] = useState<IGetAllCustomerAccountResponse[]>(
     []
@@ -33,11 +34,15 @@ export const useAccountProvider = () => {
 
   const callGetAllAccounts = async (data: IGetAllCustomerAccountRequest) => {
     try {
+      setIsLoading(true);
+
       const result = await getAllCustomerAccount(data);
       handleOnSuccess(result);
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
       toast("Ha ocurrido un error ");
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -45,7 +50,10 @@ export const useAccountProvider = () => {
 
   useEffect(() => {
     refetchAccounts();
+    return () => {
+      refetchAccounts();
+    };
   }, []);
 
-  return { accounts, state, refetchAccounts };
+  return { accounts, state, isRefechingAccounts: isLoading, refetchAccounts };
 };

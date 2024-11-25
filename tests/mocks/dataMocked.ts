@@ -19,7 +19,9 @@ export const mockAccountState = {
   refetchAccounts: () => {
     console.log("refetchAccounts");
   },
+  isRefechingAccounts: false,
   balance: 1000,
+  username: "pepe",
 };
 
 export const mockAppState = {
@@ -29,4 +31,5 @@ export const mockAppState = {
   },
   balance: 0,
   accounts: mockAccount,
+  username: "pepe",
 };

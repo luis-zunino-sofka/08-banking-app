@@ -93,16 +93,14 @@ export const SignupForm = () => {
           Registrarse
         </button>
         <div className="signup-form__footer">
-          <p>
-            ¿Ya tienes cuenta?
-            <a
-              href={ROUTE_PATH.LOGIN}
-              id="login-link"
-              className="signup-form__login-link"
-            >
-              Inicia sesión aquí
-            </a>
-          </p>
+          <p>¿Ya tienes cuenta?</p>
+          <a
+            href={ROUTE_PATH.LOGIN}
+            id="login-link"
+            className="signup-form__login-link"
+          >
+            Inicia sesión aquí
+          </a>
         </div>
       </form>
       <Toaster />

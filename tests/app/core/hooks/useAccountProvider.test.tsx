@@ -8,7 +8,7 @@ import {
   vi,
 } from "vitest";
 import { useAccountProvider } from "../../../../src/app/core/hooks/accountProvider/useAccountProvider";
-import { renderHook } from "@testing-library/react";
+import { renderHook, waitFor } from "@testing-library/react";
 import React from "react";
 import { AccountContextMock } from "../../ui/containers/AppContainer.test";
 import { mockAccountState, mockAppState } from "../../../mocks/dataMocked";
@@ -39,13 +39,15 @@ describe("useAccountProvider", () => {
     (getAllCustomerAccount as Mock).mockClear();
   });
 
-  test("debe ejecutar useAccountProvider exitoso", async () => {
+  test("debe ejecutar useAccountProvider exitoso", () => {
     const { result } = renderHook(() => useAccountProvider(), { wrapper });
     const { current } = result;
-
-    expect(current.state).toStrictEqual({});
-    expect(current.accounts).toStrictEqual([]);
-    expectTypeOf(current.refetchAccounts).toBeFunction();
-    expect(current.refetchAccounts).toBeDefined();
+    waitFor(() => {
+      expect(current.state).toStrictEqual({});
+      expect(current.accounts).toStrictEqual([]);
+      expect(current.isRefechingAccounts).toStrictEqual(true);
+      expectTypeOf(current.refetchAccounts).toBeFunction();
+      expect(current.refetchAccounts).toBeDefined();
+    });
   });
 });

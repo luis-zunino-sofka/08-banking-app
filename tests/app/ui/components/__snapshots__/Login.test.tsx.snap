@@ -49,6 +49,7 @@ exports[`Login Component > Match snapshoot 1`] = `
         />
       </div>
       <button
+        class="button"
         type="submit"
       >
         Iniciar sesión

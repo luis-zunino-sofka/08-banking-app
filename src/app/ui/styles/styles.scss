@@ -59,6 +59,11 @@ button {
   &:hover {
     background-color: #a0454542;
   }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
 }
 
 .error-message {

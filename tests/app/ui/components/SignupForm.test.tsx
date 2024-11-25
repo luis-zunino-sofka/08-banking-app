@@ -134,7 +134,7 @@ describe("SignupForm", () => {
     const submitButton = screen.getByText("Registrarse");
     waitFor(() => fireEvent.click(submitButton));
 
-    // expect(submitButton).toBeDisabled();
+    waitFor(() => expect(submitButton).toBeDisabled());
 
     waitFor(() => expect(mockHandleSubmit).toHaveBeenCalled());
   });

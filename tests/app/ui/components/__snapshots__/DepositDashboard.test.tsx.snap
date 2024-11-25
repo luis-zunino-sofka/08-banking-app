@@ -78,6 +78,7 @@ exports[`DepositDashboard > Match snapshoot 1`] = `
         </select>
       </div>
       <button
+        class="button"
         type="submit"
       >
         Depositar

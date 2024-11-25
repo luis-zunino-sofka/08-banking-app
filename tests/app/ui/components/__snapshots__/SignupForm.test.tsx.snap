@@ -141,14 +141,14 @@ exports[`SignupForm > Match snapshoot 1`] = `
       >
         <p>
           ¿Ya tienes cuenta?
-          <a
-            class="signup-form__login-link"
-            href="/"
-            id="login-link"
-          >
-            Inicia sesión aquí
-          </a>
         </p>
+        <a
+          class="signup-form__login-link"
+          href="/"
+          id="login-link"
+        >
+          Inicia sesión aquí
+        </a>
       </div>
     </form>
   </div>

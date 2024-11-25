@@ -26,6 +26,7 @@ export const usePurchase = () => {
 
   const callPhisicalPurchase = async (data: IUnidirectionalTransaction) => {
     try {
+      setIsLoadingPhisical(true);
       return await phisicalPurchase(data);
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
@@ -37,6 +38,7 @@ export const usePurchase = () => {
 
   const callOnlinePurchase = async (data: IUnidirectionalTransaction) => {
     try {
+      setIsLoadingOnline(true);
       const response = await onlinePurchase(data);
 
       return response;

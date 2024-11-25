@@ -54,21 +54,20 @@ export const PurchaseDashboard = () => {
           )}
         </div>
         <div>
-          <label htmlFor="purchase-amount">
-            Ingresa el monto a depositar:
-            <input
-              type="number"
-              id="purchase-amount"
-              placeholder="Monto de la compra en $"
-              {...register("purchaseAmount", {
-                required: "El monto es obligatorio",
-                min: {
-                  value: 1,
-                  message: "El monto debe ser mayor que $0",
-                },
-              })}
-            />
-          </label>
+          <label htmlFor="purchase-amount">Ingresa el monto a depositar:</label>
+          <input
+            type="number"
+            id="purchase-amount"
+            placeholder="Monto de la compra en $"
+            {...register("purchaseAmount", {
+              required: "El monto es obligatorio",
+              min: {
+                value: 1,
+                message: "El monto debe ser mayor que $0",
+              },
+            })}
+          />
+
           {errors.purchaseAmount && (
             <span className="error-message">
               {errors.purchaseAmount.message}

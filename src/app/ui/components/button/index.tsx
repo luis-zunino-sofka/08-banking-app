@@ -3,7 +3,7 @@ import { ClipLoader } from "react-spinners";
 export const Button = (props: { label: string; isLoading: boolean }) => {
   const { label, isLoading } = props;
   return (
-    <button type="submit">
+    <button type="submit" className="button" disabled={isLoading}>
       {!isLoading ? (
         label
       ) : (

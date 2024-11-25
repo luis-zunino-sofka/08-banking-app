@@ -6,11 +6,17 @@ export const AccountProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const { accounts, state, refetchAccounts } = useAccountProvider();
+  const { accounts, state, isRefechingAccounts, refetchAccounts } =
+    useAccountProvider();
 
   return (
     <AccountContext.Provider
-      value={{ accounts, balance: state.balance, refetchAccounts }}
+      value={{
+        accounts,
+        balance: state.balance,
+        isRefechingAccounts,
+        refetchAccounts,
+      }}
     >
       {children}
     </AccountContext.Provider>

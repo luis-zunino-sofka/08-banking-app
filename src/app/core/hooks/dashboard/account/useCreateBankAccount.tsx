@@ -25,6 +25,7 @@ export const useCreateBankAccount = () => {
     data: ICreateCustomerAccountRequest
   ) => {
     try {
+      setIsLoading(true);
       const result = await createCustomerAccount(data);
       localStorage.setItem(
         localStorageProperties.accountId,

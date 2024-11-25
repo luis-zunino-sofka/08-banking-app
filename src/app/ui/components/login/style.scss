@@ -47,12 +47,13 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 
-    &:disabled {
-      background-color: #ccc;
-    }
-
     &:hover {
       background-color: #0056b3;
+    }
+
+    &:disabled {
+      background-color: #ccc;
+      cursor: pointer;
     }
 
     &__register-link {

@@ -24,10 +24,12 @@ export const useLogin = (
   } = useForm<LoginFormData>();
 
   const callLogin = async (data: ILoginRequest) => {
+    setIsLoading(true);
     try {
+      setIsLoading(true);
+
       const result = await login(data);
       if (result.dinBody) {
-        toast("Exitoso.");
         // TODO: mejorar esto
         localStorage.setItem(
           localStorageProperties.customerId,

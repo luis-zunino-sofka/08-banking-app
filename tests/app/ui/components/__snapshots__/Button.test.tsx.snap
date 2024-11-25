@@ -3,6 +3,7 @@
 exports[`Button Component > Match snapshoot 1`] = `
 <DocumentFragment>
   <button
+    class="button"
     type="submit"
   >
     Iniciar sesión

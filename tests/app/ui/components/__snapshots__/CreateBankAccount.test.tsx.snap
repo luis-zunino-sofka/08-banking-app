@@ -53,6 +53,7 @@ exports[`CreateBankAccount > Match snapshoot 1`] = `
             />
           </div>
           <button
+            class="button"
             type="submit"
           >
             Crear Cuenta

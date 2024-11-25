@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 
 export const AppContainer = ({ children }: { children: React.ReactNode }) => {
   const { state } = useAppContext();
-  const { refetchAccounts } = useAccountContext();
+  const { isRefechingAccounts, refetchAccounts } = useAccountContext();
   const { navItems, handleLogout } = useNavbar();
 
   return (
@@ -17,6 +17,7 @@ export const AppContainer = ({ children }: { children: React.ReactNode }) => {
         handleLogout={handleLogout}
         refetchAccounts={refetchAccounts}
         navItems={navItems}
+        isRefechingAccounts={isRefechingAccounts}
       />
       {children}
       <Toaster />

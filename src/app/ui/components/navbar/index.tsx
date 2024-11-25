@@ -4,13 +4,20 @@ import { FC } from "react";
 
 export interface IDashboardProps {
   state: IState;
+  isRefechingAccounts: boolean;
   navItems: INavItem[];
   refetchAccounts: () => void;
   handleLogout: () => void;
 }
 
 export const Navbar: FC<IDashboardProps> = (props) => {
-  const { state, navItems, refetchAccounts, handleLogout } = props;
+  const {
+    state,
+    navItems,
+    isRefechingAccounts,
+    refetchAccounts,
+    handleLogout,
+  } = props;
 
   return (
     <nav className="navbar">
@@ -20,7 +27,11 @@ export const Navbar: FC<IDashboardProps> = (props) => {
       <div className="navbar__balance">
         <span>Saldo disponible: </span>
         <strong>${state.balance}</strong>
-        <button className="navbar__reload" onClick={() => refetchAccounts()}>
+        <button
+          disabled={isRefechingAccounts}
+          className="navbar__reload"
+          onClick={() => refetchAccounts()}
+        >
           Actualizar
         </button>
       </div>
