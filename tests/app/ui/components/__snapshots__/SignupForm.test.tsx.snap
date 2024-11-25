@@ -1,0 +1,156 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`SignupForm > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div
+    class="signup-form"
+  >
+    <form
+      class="signup-form__form"
+      id="register-form"
+    >
+      <h2
+        class="signup-form__title"
+      >
+        Regístrate
+      </h2>
+      <div
+        class="flex"
+      >
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-name"
+          >
+            Nombre:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-name"
+            name="name"
+            placeholder="Ingrese su nombre"
+            type="text"
+          />
+        </div>
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-lastName"
+          >
+            Apellido:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-lastName"
+            name="lastName"
+            placeholder="Ingrese su apellido"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="flex"
+      >
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-dni"
+          >
+            DNI:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-dni"
+            name="dni"
+            placeholder="Ingrese su dni"
+            type="text"
+          />
+        </div>
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-username"
+          >
+            Nombre de usuario:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-username"
+            name="username"
+            placeholder="Ingrese su nombre de usuario"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        class="flex"
+      >
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-password"
+          >
+            Contraseña:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-password"
+            name="password"
+            placeholder="Contraseña"
+            type="password"
+          />
+        </div>
+        <div
+          class="signup-form__input-group"
+        >
+          <label
+            class="signup-form__label"
+            for="input-confirmPassword"
+          >
+            Confirmar contraseña:
+          </label>
+          <input
+            class="signup-form__input"
+            id="input-confirmPassword"
+            name="confirmPassword"
+            placeholder="Confirmar contraseña"
+            type="password"
+          />
+        </div>
+      </div>
+      <button
+        class="signup-form__submit"
+        type="submit"
+      >
+        Registrarse
+      </button>
+      <div
+        class="signup-form__footer"
+      >
+        <p>
+          ¿Ya tienes cuenta?
+          <a
+            class="signup-form__login-link"
+            href="/"
+            id="login-link"
+          >
+            Inicia sesión aquí
+          </a>
+        </p>
+      </div>
+    </form>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,94 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`DepositDashboard > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div
+    class="deposit"
+  >
+    <form
+      class="form"
+      id="deposit-form"
+    >
+      <label
+        for="deposit-source"
+      >
+        Selecciona el origen del depósito:
+      </label>
+      <select
+        id="deposit-source"
+        name="depositSource"
+      >
+        <option
+          value="branch-deposit"
+        >
+          Depósito desde sucursal (Sin costo)
+        </option>
+        <option
+          value="atm"
+        >
+          Depósito desde cajero automático ($2 de costo)
+        </option>
+        <option
+          value="account"
+        >
+          Depósito desde otra cuenta ($1.5 de costo)
+        </option>
+      </select>
+      <label
+        for="deposit-amount"
+      >
+        Monto:
+      </label>
+      <input
+        id="deposit-amount"
+        min="0"
+        name="amount"
+        placeholder="Monto a depositar"
+        required=""
+        type="number"
+      />
+      <div>
+        <label
+          for="accountId"
+        >
+          Cuenta a depositar:
+        </label>
+        <select
+          id="accountId"
+          name="accountId"
+          required=""
+        >
+          <option
+            value=""
+          >
+            Elige una cuenta
+          </option>
+          <option
+            value="1"
+          >
+            Cuenta: encrypted1 - Monto: 1000
+          </option>
+          <option
+            value="2"
+          >
+            Cuenta: encrypted2 - Monto: 2500
+          </option>
+        </select>
+      </div>
+      <button
+        type="submit"
+      >
+        Depositar
+      </button>
+      <p>
+        * El costo de la transacción se deducirá del saldo.
+      </p>
+    </form>
+    <div>
+      Mocked Toaster
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,90 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`PurchaseDashboard > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      class="form"
+      id="purchase-form"
+    >
+      <div>
+        <label
+          for="purchase-type"
+        >
+          Selecciona el tipo de compra:
+        </label>
+        <select
+          id="purchase-type"
+          name="purchaseType"
+        >
+          <option
+            value=""
+          >
+            Elige el tipo de compra
+          </option>
+          <option
+            value="physical"
+          >
+            Establecimiento físico (Sin costo)
+          </option>
+          <option
+            value="online"
+          >
+            En línea (Costo de seguro de $5 USD)
+          </option>
+        </select>
+      </div>
+      <div>
+        <label
+          for="account-number-to-deposit"
+        >
+          Selecciona la cuenta a depositar:
+        </label>
+        <select
+          id="account-number-to-deposit"
+          name="accountId"
+        >
+          <option
+            value=""
+          >
+            Elige una cuenta
+          </option>
+          <option
+            value="1"
+          >
+            Cuenta: encrypted1 - Monto: 1000
+          </option>
+          <option
+            value="2"
+          >
+            Cuenta: encrypted2 - Monto: 2500
+          </option>
+        </select>
+      </div>
+      <div>
+        <label
+          for="purchase-amount"
+        >
+          Ingresa el monto a depositar:
+          <input
+            id="purchase-amount"
+            name="purchaseAmount"
+            placeholder="Monto de la compra en $"
+            type="number"
+          />
+        </label>
+      </div>
+      <button
+        type="submit"
+      >
+        Comprar
+      </button>
+    </form>
+    <div
+      style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"
+    />
+  </div>
+</DocumentFragment>
+`;

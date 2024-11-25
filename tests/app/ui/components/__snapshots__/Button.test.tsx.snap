@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Button Component > Match snapshoot 1`] = `
+<DocumentFragment>
+  <button
+    type="submit"
+  >
+    Iniciar sesión
+  </button>
+</DocumentFragment>
+`;

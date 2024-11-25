@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`InputSignup > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div
+    class="signup-form__input-group"
+  >
+    <label
+      class="signup-form__label"
+      for="input-name"
+    >
+      Name
+    </label>
+    <input
+      class="signup-form__input"
+      id="input-name"
+      name="name"
+      placeholder="Enter your name"
+      type="name"
+    />
+  </div>
+</DocumentFragment>
+`;

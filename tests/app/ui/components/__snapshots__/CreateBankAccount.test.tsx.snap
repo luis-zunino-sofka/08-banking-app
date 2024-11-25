@@ -1,0 +1,115 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`CreateBankAccount > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div>
+    <form
+      class="form"
+    >
+      <div
+        style="display: flex; gap: 10px;"
+      >
+        <div>
+          <div>
+            <label
+              for="accountType"
+            >
+              Tipo de Cuenta
+            </label>
+            <select
+              id="accountType"
+            >
+              <option
+                value=""
+              >
+                Selecciona el tipo de cuenta
+              </option>
+              <option
+                value="corriente"
+              >
+                Corriente
+              </option>
+            </select>
+            <span
+              class="error-message"
+            />
+          </div>
+          <div>
+            <label
+              for="initialBalance"
+            >
+              Saldo Inicial
+            </label>
+            <input
+              id="initialBalance"
+              min="0"
+              placeholder="Saldo inicial en $"
+              type="number"
+            />
+            <span
+              class="error-message"
+            />
+          </div>
+          <button
+            type="submit"
+          >
+            Crear Cuenta
+          </button>
+        </div>
+        <div
+          class="user-accounts"
+        >
+          <p>
+            Cuentas del usuario:
+          </p>
+          <div
+            class="user-accounts__item"
+          >
+            <div
+              class="user-accounts__info"
+            >
+              <span>
+                Nº de cuenta:
+              </span>
+               encrypted1
+            </div>
+            <div
+              class="user-accounts__info amount"
+            >
+              <span>
+                Monto:
+              </span>
+               $ 1000
+            </div>
+          </div>
+          <div
+            class="user-accounts__item"
+          >
+            <div
+              class="user-accounts__info"
+            >
+              <span>
+                Nº de cuenta:
+              </span>
+               encrypted2
+            </div>
+            <div
+              class="user-accounts__info amount"
+            >
+              <span>
+                Monto:
+              </span>
+               $ 2500
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div
+      style="position: fixed; z-index: 9999; top: 16px; left: 16px; right: 16px; bottom: 16px; pointer-events: none;"
+    />
+  </div>
+</DocumentFragment>
+`;

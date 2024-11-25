@@ -1,0 +1,67 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`WithdrawDashboard > Match snapshoot 1`] = `
+<DocumentFragment>
+  <div
+    class="withdraw"
+  >
+    <form
+      class="form"
+      id="withdraw-form"
+    >
+      <div>
+        <label
+          for="withdraw-amount"
+        >
+          Monto:
+        </label>
+        <input
+          id="withdraw-amount"
+          name="amount"
+          placeholder="Monto a retirar en $"
+          type="number"
+        />
+        <label
+          for="account-number-to-withdraw"
+        >
+          Selecciona la cuenta a retirar:
+        </label>
+        <select
+          id="account-number-to-withdraw"
+          name="accountNumberToWithdraw"
+          required=""
+        >
+          <option
+            value=""
+          >
+            Elige una cuenta
+          </option>
+          <option
+            value="1"
+          >
+            Cuenta: encrypted1 - Monto: 1000
+          </option>
+          <option
+            value="2"
+          >
+            Cuenta: encrypted2 - Monto: 2500
+          </option>
+        </select>
+      </div>
+      <p>
+        * El retiro en cajero tiene un costo de $1 USD por transacción.
+      </p>
+      <button
+        type="submit"
+      >
+        Retirar
+      </button>
+    </form>
+    <div>
+      Mocked Toaster
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,87 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountProvider > Match snapshoot 1`] = `<DocumentFragment />`;
+
+exports[`Navbar > Match snapshoot 1`] = `
+<DocumentFragment>
+  <nav
+    class="navbar"
+  >
+    <div
+      class="navbar__title"
+    >
+      <h1>
+        Bienvenido 
+      </h1>
+    </div>
+    <div
+      class="navbar__balance"
+    >
+      <span>
+        Saldo disponible: 
+      </span>
+      <strong>
+        $0
+      </strong>
+      <button
+        class="navbar__reload"
+      >
+        Actualizar
+      </button>
+    </div>
+    <div
+      class="navbar__nav"
+    >
+      <ul
+        class="navbar__list"
+      >
+        <li
+          class="navbar-item"
+        >
+          <button
+            class="navbar__link "
+          >
+            Depósito
+          </button>
+        </li>
+        <li
+          class="navbar-item"
+        >
+          <button
+            class="navbar__link "
+          >
+            Comprar
+          </button>
+        </li>
+        <li
+          class="navbar-item"
+        >
+          <button
+            class="navbar__link "
+          >
+            Gestión de cuentas
+          </button>
+        </li>
+        <li
+          class="navbar-item"
+        >
+          <button
+            class="navbar__link "
+          >
+            Retirar
+          </button>
+        </li>
+        <li
+          class="navbar__item"
+        >
+          <button
+            class="navbar__link navbar__logout"
+          >
+            Cerrar sesión
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</DocumentFragment>
+`;
