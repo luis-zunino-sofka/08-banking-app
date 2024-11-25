@@ -55,7 +55,7 @@ export const CreateBankAccount: React.FC = () => {
             <Button label="Crear Cuenta" isLoading={isLoading} />
           </div>
           <div className="user-accounts">
-            <p>Cuentas del usuario:</p>
+            <p>Tus cuentas:</p>
             {accounts.map((a) => (
               <div key={a.accountId} className="user-accounts__item">
                 <div className="user-accounts__info">

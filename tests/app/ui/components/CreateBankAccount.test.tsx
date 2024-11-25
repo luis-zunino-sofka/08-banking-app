@@ -78,7 +78,7 @@ describe("CreateBankAccount", () => {
     screen.getByLabelText(/Tipo de Cuenta/i);
     screen.getByLabelText(/Saldo Inicial/i);
     screen.getByText(/Crear Cuenta/i);
-    screen.getByText(/Cuentas del usuario:/i);
+    screen.getByText(/Tus cuentas:/i);
     screen.getAllByText(/Nº de cuenta:/i);
     screen.getAllByText(/Monto:/i);
     screen.getByText(/2500/i);

@@ -53,7 +53,7 @@
 
     &:disabled {
       background-color: #ccc;
-      cursor: pointer;
+      cursor: not-allowed;
     }
 
     &__register-link {

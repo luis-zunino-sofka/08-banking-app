@@ -63,7 +63,7 @@ exports[`CreateBankAccount > Match snapshoot 1`] = `
           class="user-accounts"
         >
           <p>
-            Cuentas del usuario:
+            Tus cuentas:
           </p>
           <div
             class="user-accounts__item"

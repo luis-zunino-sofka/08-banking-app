@@ -67,7 +67,7 @@ exports[`PurchaseDashboard > Match snapshoot 1`] = `
         <label
           for="purchase-amount"
         >
-          Ingresa el monto a depositar: 
+          Ingresa el monto a depositar:
         </label>
         <input
           id="purchase-amount"
